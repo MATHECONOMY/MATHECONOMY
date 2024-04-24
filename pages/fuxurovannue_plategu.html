@@ -127,15 +127,31 @@
 
 
   <h3 class="page-header">Задачи для самостоятельного решения</h3>
-  <p class="content_text zadacha">№1. 31 декабря 2014 года Антон взял в банке 1 млн. рублей в кредит. Схема
+  <h3 class="page-header">№ 1 <span class="page-header_namber">(Задание 17 №507278)</span></h3>
+  <p class="content_text zadacha">31 декабря 2014 года Антон взял в банке 1 млн. рублей в кредит. Схема
     выплаты кредита следующая: 31 декабря каждого следующего года банк
     начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг
     на определенное количество процентов), затем Антон переводит очередной
     транш. Антон выплатил кредит за два транша, переводя в первый раз 510
     тыс. рублей, во второй – 649 тыс. рублей. Под какой процент банк выдал
-    кредит Антону?</p>
-    <h3 class="page-header"></h3>
-    <p class="content_text zadacha">№2. 15-го января был выдан полугодовой кредит на развитие бизнеса. В таблице
+    кредит Антону?
+</p>
+  <div class="zadacha">
+    <input class="input" id="numb1" type="text">
+    <button class="button" type="button" onclick="myFunction()">Ввод</button>
+    
+    <p id="demo"> </p></div>
+    <script>
+    function myFunction() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb1").value;
+        if (isNaN(x) || x != 10) {text = "Подумай еще!";}
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    <h3 class="page-header">№ 2 <span class="page-header_namber">(Задание 17 № 513106)</span></h3>
+    <p class="content_text zadacha">15-го января был выдан полугодовой кредит на развитие бизнеса. В таблице
       представлен график его погашения.</p>
       <table class="table">
         <tr><th>Дата</th><th>15.01</th><th>15.02</th><th>15.03</th><th>15.04</th><th>15.05</th><th>15.06</th><th>15.07</th></tr>
@@ -145,8 +161,25 @@
         выплаты по погашению кредита происходили в первой половине каждого
         месяца, начиная с февраля. На сколько процентов общая сумма выплат при
         таких условиях больше суммы самого кредита?</p> 
-        <h3 class="page-header"></h3>
-        <p class="content_text zadacha"> №3. 15-го января планируется взять кредит в банке на шесть месяцев в размере 1
+        <div class="zadacha">
+          <input class="input" id="numb2" type="text">
+          <button class="button" type="button" onclick="myFunction()">Ввод</button>
+          
+          <p id="demo"> </p></div>
+          <script>
+          function myFunction() {
+              var x;
+              var text = "МОЛОДЕЦ!";
+              x = document.getElementById("numb2").value;
+              if (isNaN(x) || x != 22,5) {text = "Подумай еще!";}
+              document.getElementById("demo2").innerHTML = text;
+          }
+          </script>
+
+
+
+<h3 class="page-header">№ 3 <span class="page-header_namber">(Задание 17 № 514450)</span></h3>
+        <p class="content_text zadacha"> 15-го января планируется взять кредит в банке на шесть месяцев в размере 1
           млн рублей. Условия его возврата таковы:</p>
           <p class="content_text italic">&#10004; 1-го числа каждого месяца долг увеличивается на r процентов по
             сравнению с концом предыдущего месяца, где r — целое число;</p>
@@ -159,6 +192,20 @@
               </table>
               <p class="content_text italic">Найдите наибольшее значение r , при котором общая сумма выплат будет
                 меньше 1,2 млн рублей. </p>
+                <div class="zadacha">
+                  <input class="input" id="numb3" type="text">
+                  <button class="button" type="button" onclick="myFunction()">Ввод</button>
+                  
+                  <p id="demo"> </p></div>
+                  <script>
+                  function myFunction() {
+                      var x;
+                      var text = "МОЛОДЕЦ!";
+                      x = document.getElementById("numb3").value;
+                      if (isNaN(x) || x != 7) {text = "Подумай еще!";}
+                      document.getElementById("demo3").innerHTML = text;
+                  }
+                  </script>
                 <p></p> <p></p>
                 <a href="#vverh">
                  <img align="right" src="../images/up.png" border="0" width="50" height="50"></a>
