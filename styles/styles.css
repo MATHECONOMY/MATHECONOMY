@@ -234,7 +234,7 @@ li details > summary {
   }
 
   .box {
-    background: linear-gradient(to bottom, #218cc1 12%, #69b5d38c 70%);
+    background: #218cc1 ;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
