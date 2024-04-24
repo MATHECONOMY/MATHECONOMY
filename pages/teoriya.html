@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/fav.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Решение экономических задач</title>
+</head>
+
+<body class="body">
+  <a name="vverh"></a>
+<div class="header">
+  <div class="logo">
+    <img src="../images/logo.png" >
+  </div>
+
+  <div class="header_text">
+    Муниципальное бюджетное общеобразовательное учреждение
+    <br>Гимназия №6 имени С.Ф. Вензелева
+    <br>г. Междуреченск Кемеровской области
+  </div>
+</div>
+
+<div class="content">
+
+   <div class="content_list">
+      <div class="widget">
+         <ul>
+          <li><a class="widget__hover" href="../index.html">Главная</a></li>
+          <li><a class="widget__hover" href="../pages/teoriya.html">Теория</a></li>
+          <li><a class="widget__hover" href="../pages/annuitentnue_plategu.html">Аннуитетные<br>платежи</a></li>
+          <li><a class="widget__hover small" href="../pages/differention_plategu.html">Дифференцированные<br>платежи</a></li>
+          <li><a class="widget__hover" href="../pages/fuxurovannue_plategu.html">Фиксированные<br>платежи</a></li> 
+          <li><a class="widget__hover"href="../pages/loans.html">Вклады</a></li>
+         </ul>
+       </div>
+   </div>
+
+   <div class="felling">
+
+    <h3 class="page-header headline">1. Проценты</h3>
+    <p class="content_text">&#10004; За 100% мы принимаем ту величину, с которой сравниваем.</p>
+    <p class="content_text">Если величину \(x\) увеличить на \(p\) процентов, получим:</p>
+$$ { x\cdot \left(1 + {p \over 100}\right)}$$
+    <p class="content_text">Если величину \(x\) уменьшить на \(p\) процентов, получим:</p>
+$$ { x\cdot \left(1 - {p \over 100}\right)}$$
+    <p class="content_text">Если величину \(x\) увеличить на \(p\) процентов,  а затем уменьшить на \(q\) процентов, получим:</p>
+$$ { x\cdot \left(1 + {p \over 100}\right) \cdot \left(1 - {q \over 100}\right)}$$
+    <p class="content_text">Если величину \(x\) дважды увеличить на \(p\) процентов, получим:</p>
+$$ { x\cdot \left(1 + {p \over 100}\right)^2}$$
+    <p class="content_text">Если величину \(x\) дважды уменьшить на \(p\) процентов, получим:</p>
+$$ { x\cdot \left(1 - {p \over 100}\right)^2}$$
+    <h3 class="page-header headline">2. Арифметическая  прогрессия</h3>
+    <p class="content_text">Арифметическая прогрессия – это последовательность, каждый член которой, начиная со второго, равен сумме предыдущего члена и некоторого фиксированного числа d:</p>
+$$ a_{n+1}=a_n + d, (n=1,2, ...)$$
+    <p class="content_text">Фиксированное число d называется разностью арифметической прогрессии.</p>
+    <p class="content_text">Формула n-го члена арифметической прогрессии:</p>
+$$ a_n = a_1 + (n-1)$$
+    <p class="content_text">Сумма первых n членов арифметической прогрессии вычисляется по формуле:</p>
+$$ S_n = \frac{\left(a_1 + a_n\right)}{2}\cdot n = \frac{2a_1 + (n-1)d}{2}\cdot n $$
+    <p class="content_text">Каждый член арифметической прогрессии, начиная со второго, есть среднее арифметическое соседних:</p>
+$$ a_n = \frac{a_{n-1}+ a_{n+1}}{2} $$
+    <h3 class="page-header headline">3. Геометрическая  прогрессия</h3>
+    <p class="content_text">Геометрическая прогрессия – это последовательность, каждый член которой, начиная со второго, равен произведению предыдущего члена и некоторого фиксированного числа q, не равного нулю:</p>
+$$ b_{n+1} = b_nq,  (n=1,2, ...)$$
+    <p class="content_text">Фиксированное число q называется знаменателем геометрической прогрессии.</p>
+    <p class="content_text">Формула n-го члена геометрической прогрессии</p>:
+$$ b_n = b_1 q^{n-1}$$
+    <p class="content_text">Формула суммы первых n членов геометрической прогрессии вычисляется по формуле:</p>
+$$ S_n = b_1 \frac{q^n-1}{q-1}$$
+    <p class="content_text">Квадрат каждого члена геометрической прогрессии, начиная со второго, равен произведению соседних:</p>
+$$ b_n^2 = b_{n-1} \cdot b_{n+1}$$
+    <p class="content_text">Сумма бесконечно убывающей геометрической прогрессии – число, которое находится по формуле: </p>
+$$ S = \frac{b_1}{1-q}$$      
+
+
+<a href="#vverh">
+<img align="right" src="../images/up.png" border="0" width="50" height="50"></a>
+   </div>
+   </div>
+
+
+ 
+<SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+</body>
+</html>

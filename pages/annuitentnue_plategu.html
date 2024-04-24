@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/fav.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Решение экономических задач</title>
+</head>
+
+<body class="body">
+  <a name="vverh"></a>
+<div class="header">
+  <div class="logo">
+    <img src="../images/logo.png" >
+  </div>
+  <div class="header_text">
+    Муниципальное бюджетное общеобразовательное учреждение
+    <br>Гимназия №6 имени С.Ф. Вензелева
+    <br>г. Междуреченск Кемеровской области
+  </div>
+</div>
+
+<div class="content">
+  <div class="content_list">
+    <div class="widget">
+       <ul>
+        <li><a class="widget__hover" href="../index.html">Главная</a></li>
+        <li><a class="widget__hover" href="../pages/teoriya.html">Теория</a></li>
+        <li><a class="widget__hover" href="../pages/annuitentnue_plategu.html">Аннуитетные<br>платежи</a></li>
+        <li><a class="widget__hover small" href="../pages/differention_plategu.html">Дифференцированные<br>платежи</a></li>
+        <li><a class="widget__hover" href="../pages/fuxurovannue_plategu.html">Фиксированные<br>платежи</a></li> 
+        <li><a class="widget__hover"href="../pages/loans.html">Вклады</a></li>
+       </ul>
+     </div>
+ </div>
+ 
+  <div class="felling">
+    <h3 class="page-header">Задачи с решениями</h3>
+    <h3 class="page-header">№ 1 <span class="page-header_namber">(Задание 16 №508300)</span></h3>
+    <p class="content_text zadacha">1 января 2015 года Александр Сергеевич взял в банке 1,1 млн рублей в кредит. Схема выплаты кредита следующая  — 1 числа каждого следующего месяца банк начисляет 1 процент на оставшуюся сумму долга (то есть увеличивает долг на 1%), затем Александр Сергеевич переводит в банк платёж. На какое минимальное количество месяцев Александр Сергеевич может взять кредит, чтобы ежемесячные выплаты были не более 275 тыс. рублей?</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – 1 100 000 рублей</p>
+    <p class="content_text italic">Процентная ставка: r = 1%</p>
+    <p class="content_text italic">Введём коэффициент b = 1,01</p>
+    <p class="content_text italic">Ежегодная выплата х ≤ 275 000 рублей</p>
+    <p class="content_text italic">Количество месяцев - ?</p>
+    <table class="table italic">
+      <tr><th>Месяц</th><th>Долг с %</th><th>Платёж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td><td>1 10 0000</td></tr>
+      <tr><td>1</td><td>1 100 000*1,01= 1 111 000</td><td>275 000</td><td>836 000</td></tr>
+      <tr><td>2</td><td>836 000*1,01=844 360</td><td>275 000</td><td>569 360</td></tr>
+      <tr><td>3</td><td>569 360*1,01=575 053,6</td><td>275 000</td><td>300 053,6</td></tr>
+      <tr><td>4</td><td>300 053,6*1,01=30 3053,53</td><td>275 000</td><td>28 053,53</td></tr>
+      <tr><td>5</td><td>28 053,53*1,01=28 334,0653</td><td>28 334,0653</td><td>-</td></tr>
+    </table>
+    <p class="content_text italic">Ответ: 5 месяцев.</p>
+  </p>  </details>
+
+    <h3 class="page-header">№ 2 <span class="page-header_namber">(Задание 16 №508301)</span></h3>
+    <p class="content_text zadacha">31 декабря 2014 года Дмитрий взял в банке 4 290 000 рублей в кредит под 14,5% годовых. Схема выплаты кредита следующая  — 31 декабря каждого следующего года банк начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг на 14,5%), затем Дмитрий переводит в банк x рублей. Какой должна быть сумма x, чтобы Дмитрий выплатил долг двумя равными платежами (то есть за два года)?</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – S = 4 290 000 рублей</p>
+    <p class="content_text italic">Процентная ставка: r = 14,5%</p>
+    <p class="content_text italic">Введём коэффициент b = 1,145</p>
+    <p class="content_text italic">Ежегодная выплата -  х рублей</p>
+    <p class="content_text italic">Количество лет - 2 года</p>
+    <table class="table italic">
+      <tr><th>Год</th><th>Долг с %</th><th>Платёж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td><td>$$S$$</td></tr>
+      <tr><td>1</td><td>$$Sb$$</td><td>$$x$$</td><td>$$Sb-x$$</td></tr>
+      <tr><td>2</td><td>$$(Sb-x)b= Sb^2-xb$$</td><td>$$x$$</td><td>Полная выплата – остаток 0</td></tr>
+    </table>
+    $$Sb^2 - xb = x,$$
+    $$Sb^2 = xb + x,$$
+    $$Sb^2 = x (b + 1),$$
+    $$x = Sb^2 / b + 1,$$
+    $$x = 4 290 000 * 1.145^2 / 1.145 + 1 = 2622050.$$
+    <p class="content_text italic">Ответ: 2622050 рублей.</p></details>
+
+    <h3 class="page-header">№ 3 <span class="page-header_namber">(Задание 16 №508302)</span></h3>
+    <p class="content_text zadacha">31 декабря 2014 года Савелий взял в банке 7 378 000 рублей в кредит под 12,5% годовых. Схема выплаты кредита следующая: 31 декабря каждого следующего года банк начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг на 12,5%), затем Савелий переводит в банк платёж. Весь долг Савелий выплатил за 3 равных платежа. На сколько рублей меньше он бы отдал банку, если бы смог выплатить долг за 2 равных платежа?</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – S = 7 378 000 рублей</p>
+    <p class="content_text italic">Процентная ставка: r =12,5%</p>
+    <p class="content_text italic">Введём коэффициент b=1,125</p>
+    <p class="content_text italic">Ежегодная выплата -  х рублей</p>
+    <p></p>
+    <p class="content_text italic">3 равных платежа</p>
+    <table class="table italic">
+      <tr><th>Год</th><th>Долг с %</th><th>Платёж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td><td>$$S$$</td></tr>
+      <tr><td>1 год</td><td>$$Sb$$</td><td>$$x$$</td><td>$$Sb-x$$</td></tr>
+      <tr><td>2 год</td><td>$$(Sb-x)b= Sb^2-xb$$</td><td>$$x$$</td><td>$$Sb^2-xb-x$$</td></tr>
+      <tr><td>3 год</td><td>$$ \left(Sb^2-xb-x \right)b = Sb^3-xb^2-xb $$</td><td>$$x$$</td><td>0</td></tr>
+    </table>
+    $$Sb^3 - xb^2 - xb -x = 0,$$
+    $$Sb^3 - x \left( b^2+b+1\right) = 0,$$
+    $$Sx = Sb^3/b^2+b+1,$$
+    $$x = 7 378 000 * 1.125^3 / 1.125^2 + 1.125 + 1 = 3 098 250 рублей.$$
+    <p></p>
+    <p class="content_text italic">2 равных платежа</p>
+    <table class="table italic">
+      <tr><th>Год</th><th>Долг с %</th><th>Платёж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td><td>$$S$$</td></tr>
+      <tr><td>1 год</td><td>$$Sb$$</td><td>$$x$$</td><td>$$Sb-x$$</td></tr>
+      <tr><td>2 год</td><td>$$(Sb-x)b= Sb^2-xb$$</td><td>$$x$$</td><td>0</td></tr>
+    </table>
+    $$Sb^2 - xb - x = 0,$$
+    $$Sb^2 - x (b + 1) = 0,$$
+    $$x = Sb^2 / b + 1,$$
+    $$x = 7 378 000 * 1.125^2 / 1.125 + 1 = 4 394 250 рублей.$$
+    $$3 098 250 * 3 - 4 394 250 * 2 = 506 250 рублей.$$
+    <p class="content_text italic">Ответ: 506 250 рублей.</p></details>
+  </p>  
+
+  
+  <h3 class="page-header">Задачи для самостоятельного решения</h3>
+  <h3 class="page-header">№ 1 <span class="page-header_namber">(Задание 17 №507278)</span></h3>
+  <p class="content_text zadacha">1 января 2015 года Павел Витальевич взял в банке 1 млн. рублей в кредит. Схема выплаты кредита следующая: 1 числа каждого следующего месяца банк начисляет 1% на оставшуюся сумму долга (то есть увеличивает долг на 1%), затем Павел Витальевич переводит в банк платеж. На какое минимальное количество месяцев Павел Витальевич может взять кредит, чтобы ежемесячные выплаты были не более 125 тыс. рублей? В окно ответа введите только число.   </p>
+  <div class="zadacha">
+    <input class="input" id="numb1" type="text">
+    <button class="button" type="button" onclick="myFunction()">Ввод</button>
+    
+    <p id="demo"> </p></div>
+    <script>
+    function myFunction() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb1").value;
+        if (isNaN(x) || x != 9) {text = "Подумай еще!";}
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+
+<h3 class="page-header">№ 2 <span class="page-header_namber">(Задание 17 №507280)</span></h3>
+<p class="content_text zadacha">31 декабря 2014 года Ярослав взял в банке некоторую сумму в кредит под 12,5% годовых. Схема выплаты кредита следующая: 31 декабря каждого следующего года банк начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг на 12,5%), затем Ярослав переводит в банк 2 132 325 рублей. Какую сумму взял Ярослав в банке, если он выплатил долг четырьмя равными платежами (то есть за четыре года)? В окно ответа введите только число. </p>
+<div class="zadacha">
+  <input class="input" id="numb2" type="text">
+  <button class="button" type="button" onclick="myFunction2()">Ввод</button>
+  
+  <p id="demo2"> </p></div>
+  <script>
+    function myFunction2() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb2").value;
+        if (isNaN(x) || x != 6409000) {text = "Подумай еще!";}
+        document.getElementById("demo2").innerHTML = text;
+    }
+    </script>
+
+<h3 class="page-header">№ 3 <span class="page-header_namber">(Задание 17 №508215)</span></h3>
+<p class="content_text zadacha">31 декабря 2014 года Дмитрий взял в банке 4 290 000 рублей в кредит под 14,5% годовых. Схема выплаты кредита следующая — 31 декабря каждого следующего года банк начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг на 14,5%), затем Дмитрий переводит в банк X рублей. Какой должна быть сумма X, чтобы Дмитрий выплатил долг двумя равными платежами (то есть за два года)? В окно ответа введите только число.</p>
+<div class="zadacha">
+  <input class="input" id="numb3" type="text">
+  <button class="button" type="button" onclick="myFunction3()">Ввод</button>
+  
+  <p id="demo3"> </p></div>
+  <script>
+    function myFunction3() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb3").value;
+        if (isNaN(x) || x != 2622050) {text = "Подумай еще!";}
+        document.getElementById("demo3").innerHTML = text;
+    }
+    </script>
+
+<h3 class="page-header">№ 4 <span class="page-header_namber">(Задание 17 №507284)</span></h3>
+<p class="content_text zadacha">31 декабря 2014 года Тимофей взял в банке 7 007 000 рублей в кредит под 20% годовых. Схема выплаты кредита следующая: 31 декабря каждого следующего года банк начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг на 20%), затем Тимофей переводит в банк платёж. Весь долг Тимофей выплатил за 3 равных платежа. На сколько рублей меньше он бы отдал банку, если бы смог выплатить долг за 2 равных платежа?  В окно ответа введите только число.</p>
+<div class="zadacha">
+  <input class="input" id="numb4" type="text">
+  <button class="button" type="button" onclick="myFunction4()">Ввод</button>
+  
+  <p id="demo4"> </p></div>
+  <script>
+    function myFunction4() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb4").value;
+        if (isNaN(x) || x != 806400) {text = "Подумай еще!";}
+        document.getElementById("demo4").innerHTML = text;
+    }
+    </script>
+ <p></p> <p></p>
+ <a href="#vverh">
+  <img align="right" src="../images/up.png" border="0" width="50" height="50"></a>
+     </div>
+     </div>
+  </div>
+</div>
+  
+  
+<SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+ 
+</body>
+</html>

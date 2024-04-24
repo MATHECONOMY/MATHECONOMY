@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url(./Roboto.ttf) format('woff2'),
+    url(./Roboto.ttf) format('woff'),
+    url(./Roboto.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src:
+    url(./Lobster-Regular.ttf) format('woff2'),
+    url(./Lobster-Regular.ttf) format('woff'),
+    url(./Lobster-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src:
+    url(./fontawesome.ttf) format('woff2'),
+    url(./fontawesome.ttf) format('woff'),
+    url(./fontawesome.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+

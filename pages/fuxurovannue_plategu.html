@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/fav.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Решение экономических задач</title>
+</head>
+
+<body class="body">
+  <a name="vverh"></a>
+<div class="header">
+  <div class="logo">
+    <img src="../images/logo.png" >
+  </div>
+  <div class="header_text">
+    Муниципальное бюджетное общеобразовательное учреждение
+    <br>Гимназия №6 имени С.Ф. Вензелева
+    <br>г. Междуреченск Кемеровской области
+  </div>
+</div>
+
+<div class="content">
+  <div class="content_list">
+     <div class="widget">
+        <ul>
+          <li><a class="widget__hover" href="../index.html">Главная</a></li>
+          <li><a class="widget__hover" href="../pages/teoriya.html">Теория</a></li>
+          <li><a class="widget__hover" href="../pages/annuitentnue_plategu.html">Аннуитетные<br>платежи</a></li>
+          <li><a class="widget__hover small" href="../pages/differention_plategu.html">Дифференцированные<br>платежи</a></li>
+          <li><a class="widget__hover" href="../pages/fuxurovannue_plategu.html">Фиксированные<br>платежи</a></li> 
+          <li><a class="widget__hover"href="../pages/loans.html">Вклады</a></li>
+        </ul>
+      </div>
+  </div>
+ 
+  <div class="felling">
+    <h3 class="page-header">Задачи с решениями</h3>
+    <h3 class="page-header">№ 1 <span class="page-header_namber">(Задание 16 №507275)</span></h3>
+    <p class="content_text zadacha">31 декабря 2014 года Валерий взял в банке 1 млн рублей в кредит. Схема выплаты кредита следующая: 31 декабря каждого следующего года банк начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг на определённое количество процентов), затем Валерий переводит очередной платеж. Валерий выплатил кредит за два платежа, переводя в первый раз 660 тыс рублей, во второй  — 484 тыс. рублей. Под какой процент банк выдал кредит Валерию?</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – 1 100 000 рублей</p>
+    <p class="content_text italic">Процентная ставка: r = 1%</p>
+    <p class="content_text italic">Введём коэффициент b = b=1+0,01r</p>
+    <p class="content_text italic">Первый транш – 660 000 рублей</p>
+    <p class="content_text italic">Второй транш – 484 000 рублей</p>
+    <table class="table italic">
+      <tr><th>Месяц</th><th>Долг с %</th><th>Платеж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td><td>$$S$$</td></tr>
+      <tr><td>1 год</td><td>$$Sb$$</td><td>$$660 000$$</td><td>$$Sb - 660 000$$</td></tr>
+      <tr><td>2</td><td>$$(Sb - 660 000)b = Sb^2 - 660 000b$$</td><td>$$484 000$$</td><td>$$-$$</td></tr>
+      
+    </table>
+    $$Sb^2 - 660 000b = 484 000,$$
+    $$1 000 000b^2 - 660 000b - 484 000 = 0,$$
+    $$1 000b^2 - 660b - 484 = 0,$$
+    $$250b^2 – 165b – 121 = 0,$$
+    $$D = 1652 – 4\cdot 250\cdot (-121) = 27 225 + 121 000 = 148 225 $$
+    $$b_1 = {165+385\over 500} = 1.1$$
+    $$b_2 = {165 – 385\over 500} = - 0.44$$ 
+    <p class="content_text italic">Ответ: 10 %.</p>
+ </details>
+
+    <h3 class="page-header">№ 2 <span class="page-header_namber">(Задание 16 №628642)</span></h3>
+    <p class="content_text zadacha">Индивидуальному предпринимателю 15 марта был выдан кредит на приобретение оборудования. В таблице указан график его погашения. Текущий долг указывается в процентах:</p>
+      <table class="table">
+        <tr><th>Дата</th><th>15.03</th><th>15.04</th><th>15.05</th><th>15.06</th><th>15.07</th><th>15.08</th><th>15.09</th></tr>
+        <tr><th>Долг</th><th>100%</th><th>80%</th><th>65%</th><th>45%</th><th>30%</th><th>20%</th><th>0%</th></tr>
+      </table>
+        <p class="content_text zadacha"> В конце каждого месяца, начиная с марта, банк увеличивает текущий долг на 5%. После этого в первой половине последующего месяца заемщик обязан внести в банк такую сумму, чтобы оставшийся долг стал равным указанному в таблице текущему долгу на 15 число этого месяца. На сколько процентов общая сумма выплат при таких условиях больше суммы самого кредита?
+        </p>
+        <details>
+          <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – S рублей</p>
+    <p class="content_text italic">Процентная ставка: 5%</p>
+    <p class="content_text italic">Введём коэффициент b=1,05</p>
+    
+    <table class="table">
+      <tr><th>Месяц</th><th>Долг с %</th><th>Платеж</th><th>Долг после выплаты</th></tr>
+      <tr><td>15.03</td><td></td><td></td><td>$$S$$</td></tr>
+      <tr><td>15.04</td><td>$$Sb$$</td><td>$$Sb – 0,8S$$</td><td>$$0,8S$$</td></tr>
+      <tr><td>15.05</td><td>$$0,8Sb$$</td><td>$$0,8Sb – 0,65S$$</td><td>$$0,65S$$</td></tr>
+      <tr><td>15.06</td><td>$$0,65Sb$$</td><td>$$0,65Sb – 0,45S$$</td><td>$$0,45S$$</td></tr>
+      <tr><td>15.07</td><td>$$0,45Sb$$</td><td>$$0,45Sb – 0,3S$$</td><td>$$0,3S$$</td></tr>
+      <tr><td>15.08</td><td>$$0,3Sb$$</td><td>$$0,3Sb – 0,2S$$</td><td>$$0,2S$$</td></tr>
+      <tr><td>15.09</td><td>$$0,2Sb$$</td><td>$$0,2Sb$$</td><td>$$0$$</td></tr>
+    </table>
+    <p class="content_text italic">Найдем на сколько процентов общая сумма выплат больше суммы самого кредита:</p>
+        $$(Sb + 0,8Sb + 0,65Sb + 0,45Sb + 0,3Sb + 0,2Sb) -$$
+         $$- (0,8S + 0,65S + 0,45S + 0,3S + 0,2S) =$$
+        $$3,4Sb - 2,4S = S (3,4b -2,4) = S (3,4\cdot 1,05 - 2,4) = 1,17S$$
+        
+    <p class="content_text italic">Ответ: 17 %</p></details>
+
+    <h3 class="page-header">№ 3 <span class="page-header_namber">(Задание 16 №628244)</span></h3>
+    <p class="content_text zadacha">В июле 2022 года планируется взять кредит в банке на четыре года в размере S млн рублей, где S  — целое число. Условия его возврата таковы:</p>
+    <p class="content_text italic">&#10004; каждый январь долг увеличивается на 15% по сравнению с концом предыдущего года;</p>
+    <p class="content_text italic">&#10004; с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p>
+    <p class="content_text italic">&#10004; в июле каждого года долг должен составлять часть кредита в соответствии со следующей таблицей.</p>
+    <table class="table">
+      <tr><th>Месяц и год</th><th>Июль 2022 </th><th>Июль 2023</th><th>Июль 2024</th><th>Июль 2025</th><th>Июль 2026</th></tr>
+      <tr><th>Долг (в млн рублей)</th><th>S</th><th>0,7S</th><th>0,4S</th><th>0,2S</th><th>0</th></tr>
+    </table>
+    <p class="content_text italic">Найдите наибольшее значение S, при котором каждая из выплат будет меньше 3 млн рублей.</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – S рублей</p>
+    <p class="content_text italic">Процентная ставка: r = 15 %</p>
+    <p class="content_text italic">Введём коэффициент b = 1,15</p>
+    <table class="table">
+      <tr><th>Год</th><th>Долг с %</th><th>Выплата</th><th>Долг после выплаты</th></tr>
+      <tr><td>2022</td><td></td><td></td><td>$$S$$</td></tr>
+      <tr><td>2023</td><td>$$Sb$$</td><td>$$Sb – 0,7S$$</td><td>$$0,7S$$</td></tr>
+      <tr><td>2024</td><td>$$0,7Sb$$</td><td>$$0,7Sb – 0,4S$$</td><td>$$0,4S$$</td></tr>
+      <tr><td>2025</td><td>$$0,4Sb$$</td><td>$$0,4Sb – 0,2S$$</td><td>$$0,2S$$</td></tr>
+      <tr><td>2026</td><td>$$0,2Sb$$</td><td>$$0,2Sb$$</td><td>$$0$$</td></tr>
+    </table>
+    <p class="content_text italic">Найдём общую сумму выплат:
+  $$(Sb + 0.7Sb + 0.4Sb + 0.2Sb) - (0.7S + 0.4S + 0,2S) < 3$$
+  $$2.3Sb – 1.3S = S (2.3\cdot 1.15 – 1.3) = 1.345S < 3$$
+  $$S < {3\over 1.345} S = 2.23$$
+  <p class="content_text italic">Ответ: 2 млн. рублей</p></details>
+
+
+  <h3 class="page-header">Задачи для самостоятельного решения</h3>
+  <p class="content_text zadacha">№1. 31 декабря 2014 года Антон взял в банке 1 млн. рублей в кредит. Схема
+    выплаты кредита следующая: 31 декабря каждого следующего года банк
+    начисляет проценты на оставшуюся сумму долга (то есть увеличивает долг
+    на определенное количество процентов), затем Антон переводит очередной
+    транш. Антон выплатил кредит за два транша, переводя в первый раз 510
+    тыс. рублей, во второй – 649 тыс. рублей. Под какой процент банк выдал
+    кредит Антону?</p>
+    <h3 class="page-header"></h3>
+    <p class="content_text zadacha">№2. 15-го января был выдан полугодовой кредит на развитие бизнеса. В таблице
+      представлен график его погашения.</p>
+      <table class="table">
+        <tr><th>Дата</th><th>15.01</th><th>15.02</th><th>15.03</th><th>15.04</th><th>15.05</th><th>15.06</th><th>15.07</th></tr>
+        <tr><th>Долг</th><th>100%</th><th>90%</th><th>80%</th><th>70%</th><th>60%</th><th>50%</th><th>0%</th></tr>
+      </table>
+      <p class="content_text zadacha">В конце каждого месяца, начиная с января, текущий долг увеличивался на 5%, а
+        выплаты по погашению кредита происходили в первой половине каждого
+        месяца, начиная с февраля. На сколько процентов общая сумма выплат при
+        таких условиях больше суммы самого кредита?</p> 
+        <h3 class="page-header"></h3>
+        <p class="content_text zadacha"> №3. 15-го января планируется взять кредит в банке на шесть месяцев в размере 1
+          млн рублей. Условия его возврата таковы:</p>
+          <p class="content_text italic">&#10004; 1-го числа каждого месяца долг увеличивается на r процентов по
+            сравнению с концом предыдущего месяца, где r — целое число;</p>
+            <p class="content_text italic">&#10004; со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p>
+            <p class="content_text italic">&#10004; 15-го числа каждого месяца долг должен составлять некоторую сумму в
+              соответствии со следующей таблицей.</p>
+              <table class="table">
+                <tr><th>Дата</th><th>15.01</th><th>15.02</th><th>15.03</th><th>15.04</th><th>15.05</th><th>15.06</th><th>15.07</th></tr>
+                <tr><th>Долг</th><th>1</th><th>0.6</th><th>0.4</th><th>0.3</th><th>0.2</th><th>0.1</th><th>0</th></tr>
+              </table>
+              <p class="content_text italic">Найдите наибольшее значение r , при котором общая сумма выплат будет
+                меньше 1,2 млн рублей. </p>
+                <p></p> <p></p>
+                <a href="#vverh">
+                 <img align="right" src="../images/up.png" border="0" width="50" height="50"></a>
+                    </div>
+                    </div>
+                 </div>
+               </div>
+  
+<SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+ 
+</body>
+</html>

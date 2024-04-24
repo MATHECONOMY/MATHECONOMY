@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/fav.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Решение экономических задач</title>
+</head>
+
+<body class="body">
+  <a name="vverh"></a>
+<div class="header">
+  <div class="logo">
+    <img src="../images/logo.png" >
+  </div>
+  <div class="header_text">
+    Муниципальное бюджетное общеобразовательное учреждение
+    <br>Гимназия №6 имени С.Ф. Вензелева
+    <br>г. Междуреченск Кемеровской области
+  </div>
+</div>
+
+<div class="content">
+  <div class="content_list">
+    <div class="widget">
+       <ul>
+        <li><a class="widget__hover" href="../index.html">Главная</a></li>
+        <li><a class="widget__hover" href="../pages/teoriya.html">Теория</a></li>
+        <li><a class="widget__hover" href="../pages/annuitentnue_plategu.html">Аннуитетные<br>платежи</a></li>
+        <li><a class="widget__hover small" href="../pages/differention_plategu.html">Дифференцированные<br>платежи</a></li>
+        <li><a class="widget__hover" href="../pages/fuxurovannue_plategu.html">Фиксированные<br>платежи</a></li> 
+        <li><a class="widget__hover"href="../pages/loans.html">Вклады</a></li>
+       </ul>
+     </div>
+ </div>
+ 
+  <div class="felling">
+    <h3 class="page-header">Задачи с решениями</h3>
+    <h3 class="page-header">№ 1 <span class="page-header_namber">(Задание 16 №509980)</span></h3>
+    <p class="content_text zadacha">15‐го января планируется взять кредит в банке на 14 месяцев. Условия его возврата таковы:
+      <br>&#10004; 1-го числа каждого месяца долг возрастает на r% по сравнению с концом предыдущего месяца;
+      <br>&#10004; со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;
+      <br>&#10004; 15-го числа каждого месяца долг должен быть на одну и ту же сумму меньше долга на 15 число предыдущего месяца. </p>
+      <p class="content_text zadacha"> Известно, что общая сумма выплат после полного погашения кредита на 15% больше суммы, взятой в кредит. Найдите r.</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – S</p>
+    <p class="content_text italic">Процентная ставка: r%</p>
+    <p class="content_text italic">Введём коэффициент b = 1 + 1,01r</p>
+    <table class="table italic">
+      <tr><th>Месяц</th><th>Долг с %</th><th>Платёж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td><td>$$ S $$</td></tr>
+      <tr><td>1</td><td>$$Sb$$</td><td>$$Sb-{13S \over 14}$$</td><td>$${13S \over 14}$$</td></tr>
+      <tr><td>2</td><td>$${13Sb \over 14}$$</td><td>$${13Sb \over 14} - {12S \over 14}$$</td><td>$${12S \over 14}$$</td></tr>
+      <tr><td>3</td><td>$${12Sb \over 14}$$</td><td>$${12Sb \over 14} - {11S \over 14}$$</td><td>$${11S \over 14}$$</td></tr>
+      <tr><td>4</td><td>$${11Sb \over 14}$$</td><td>$${11Sb \over 14} - {10S \over 14}$$</td><td>$${10S \over 14}$$</td></tr>
+      <tr><td>...</td><td></td><td></td><td></td></tr>
+      <tr><td>13</td><td>$${2Sb \over 14}$$</td><td>$${2Sb \over 14} - {S \over 14}$$</td><td>$${S \over 14}$$</td></tr>
+      <tr><td>14</td><td>$${Sb \over 14}$$</td><td>$${Sb \over 14}$$</td><td>$$0$$</td></tr>
+    </table>
+    <p class="content_text italic">Ответ: 5 месяцев.</p>
+  </p>  </details>
+
+  <h3 class="page-header">№ 2 <span class="page-header_namber">(Задание 16 №520856)</span></h3>
+    <p class="content_text zadacha">15-го декабря планируется взять кредит в банке на 13 месяцев. Условия возврата таковы:
+      <br>&#10004; 1-го числа каждого месяца долг возрастает на 2% по сравнению с концом предыдущего месяца;
+      <br>&#10004; со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;
+      <br>&#10004; 15-го числа каждого месяца с 1-го по 12-й долг должен быть на 50 тысяч рублей меньше долга на 15-е число предыдущего месяца;
+      <br>&#10004; к 15-му числу 13-го месяца кредит должен быть полностью погашен.
+    </p>
+    <p class="content_text zadacha">  Какую сумму планируется взять в кредит, если общая сумма выплат после полного его погашения составит 804 тысячи рублей?</p>
+    <details>
+      <summary class="question"><b>Решение</b></summary>
+    <p class="content_text italic">Сумма кредита – S рублей</p>
+    <p class="content_text italic">Процентная ставка: r = 2%</p>
+    <p class="content_text italic">Введём коэффициент b = 1,02</p>
+    <p class="content_text italic">Количество месяцев: 13</p>
+    <table class="table italic">
+      <tr><th>Месяц</th><th>Долг с %</th><th>Платёж</th><th>Долг после выплаты</th></tr>
+      <tr><td>0</td><td></td><td></td>$$ S $$<td></td></tr>
+      <tr><td>1</td><td>$$ Sb $$</td><td>$$ Sb-(S-50) $$</td><td>$$ S-50 $$</td></tr>
+      <tr><td>2</td><td>$$ (S-50)b $$</td><td>$$ (S-50)b-(S-100) $$</td><td>$$ S-100 $$</td></tr>
+      <tr><td>3</td><td>$$ (S-100)b $$</td><td>$$ (S-100)b-(S-150) $$</td><td>$$ S-150 $$</td></tr>
+      <tr><td>4</td><td>$$ (S-150)b $$</td><td>$$ (S-150)b-(S-200) $$</td><td>$$ S-200 $$</td></tr>
+      <tr><td>5</td><td>$$ (S-200)b $$</td><td>$$ (S-200)b-(S-250) $$</td><td>$$ S-250 $$</td></tr>
+      <tr><td>6</td><td>$$ (S-250)b $$</td><td>$$ (S-250)b-(S-300) $$</td><td>$$ S-300 $$</td></tr>
+      <tr><td>...</td><td></td><td></td><td></td></tr>
+      <tr><td>12</td><td>$$ (S-550)b $$</td><td>$$ (S-550)b-(S-600) $$</td><td>$$ S-600 $$</td></tr>
+      <tr><td>13</td><td>$$ (S-600)b $$</td><td>$$ (S-600)b $$</td><td>$$ 0 $$</td></tr>
+    </table>
+    <p class="content_text italic">Найдем общую сумму выплат</p>
+$$ \left(Sb + (S-50)b + (S-100)b + ... + (S-550)b + (S-600)b \right) - $$
+$$ - \left( (S-50) + (S-100) + ... + (S-600)  \right) = 804$$
+    <p class="content_text italic">По формуле суммы арифметической прогрессии получаем:</p>
+$$ b(S-300) * 13 - (S-325)*12 = 804 $$
+$$ 13Sb - 3900b - 12S + 3900 = 804 $$
+$$ s(13b-12) = 804 + 3900b - 3900 $$
+$$ S=882 / 1.26 = 700 тыс.рублей $$
+    <p class="content_text italic">Ответ: 700 000рублей.</p>
+  </p>  </details>
+
+  
+  <h3 class="page-header">Задачи для самостоятельного решения</h3>
+  <h3 class="page-header">№ 1 <span class="page-header_namber">(Задание 17 №507278)</span></h3>
+  <p class="content_text zadacha">15-го декабря планируется взять кредит в банке на 11 месяцев. Условия возврата таковы:
+    <br>&#10004; 1-го числа каждого месяца долг возрастает на 3% по сравнению с концом предыдущего месяца;
+    <br>&#10004; со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;   
+    <br>&#10004; 15-го числа каждого месяца с 1-го по 10-й долг должен быть на 80 тысяч рублей меньше долга на 15-е число предыдущего месяца;   
+    <br>&#10004; к 15-му числу 11-го месяца кредит должен быть полностью погашен.  
+    </p> 
+    <p class="content_text zadacha">Какой долг будет 15-го числа 10-го месяца, если общая сумма выплат после полного погашения кредита составит 1198 тысяч рублей?   </p>
+  <div class="zadacha">
+    <input class="input" id="numb1" type="text">
+    <button class="button" type="button" onclick="myFunction()">Ввод</button>
+    
+    <p id="demo"> </p></div>
+    <script>
+    function myFunction() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb1").value;
+        if (isNaN(x) || x != 200000) {text = "Подумай еще!";}
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+
+<h3 class="page-header">№ 2 <span class="page-header_namber">(Задание 17 №507280)</span></h3>
+<p class="content_text zadacha">15-го декабря планируется взять кредит в банке на 26 месяцев. Условия возврата таковы:
+  <br>&#10004; 1-го числа каждого месяца долг возрастает на 3% по сравнению с концом предыдущего месяца;
+  <br>&#10004; со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;
+  <br>&#10004; 15-го числа каждого месяца с 1-го по 25-й долг должен быть на 20 тысяч рублей меньше долга на 15-е число предыдущего месяца;
+  <br>&#10004; к 15-му числу 26-го месяца кредит должен быть полностью погашен.
+</p>
+<p class="content_text zadacha">Какой долг будет 15-го числа 25-го месяца, если общая сумма выплат после полного погашения кредита составит 1407 тысяч рублей?</p>
+<div class="zadacha">
+  <input class="input" id="numb2" type="text">
+  <button class="button" type="button" onclick="myFunction2()">Ввод</button>
+  
+  <p id="demo2"> </p></div>
+  <script>
+    function myFunction2() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb2").value;
+        if (isNaN(x) || x != 400000) {text = "Подумай еще!";}
+        document.getElementById("demo2").innerHTML = text;
+    }
+    </script>
+
+<h3 class="page-header">№ 3 <span class="page-header_namber">(Задание 17 №508215)</span></h3>
+<p class="content_text zadacha"> 15-го декабря планируется взять кредит в банке на 21 месяц.
+  Условия возврата таковы:
+  <br>&#10004; 1-го числа каждого месяца долг возрастает на 3% по сравнению с концом предыдущего месяца;
+  <br>&#10004; со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;
+  <br>&#10004; 15-го числа каждого месяца с 1-го по 20-й долг должен быть на 30 тысяч рублей меньше долга на 15-е число предыдущего месяца;
+  <br>&#10004; к 15-му числу 21-го месяца кредит должен быть полностью погашен.
+  </p>
+  <p class="content_text zadacha">Какую сумму планируется взять в кредит, если общая сумма выплат после полного его погашения составит 1604 тысяч рублей?</p>
+<div class="zadacha">
+  <input class="input" id="numb3" type="text">
+  <button class="button" type="button" onclick="myFunction3()">Ввод</button>
+  
+  <p id="demo3"> </p></div>
+  <script>
+    function myFunction3() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb3").value;
+        if (isNaN(x) || x != 1100) {text = "Подумай еще!";}
+        document.getElementById("demo3").innerHTML = text;
+    }
+    </script>
+
+<h3 class="page-header">№ 4 <span class="page-header_namber">(Задание 17 №507284)</span></h3>
+<p class="content_text zadacha">15 января планируется взять в банке кредит на 20 месяцев.
+  Условия возврата таковы:
+  <br>&#10004; 1 числа каждого месяца долг возрастает на 2% по сравнению с концом предыдущего месяца;
+  <br>&#10004; со 2 по 14 число каждого месяца необходимо выплатить часть долга;
+  <br>&#10004; 15-го числа каждого месяца долг должен быть на одну и ту же величину меньше долга на 15-е число предыдущего месяца.
+  <br>&#10004; Известно, что за первые 10 месяцев нужно выплатить банку 1179 тыс. рублей.
+</p>
+<p class="content_text">Какую сумму планируется взять в кредит?</p>
+<div class="zadacha">
+  <input class="input" id="numb4" type="text">
+  <button class="button" type="button" onclick="myFunction4()">Ввод</button>
+  
+  <p id="demo4"> </p></div>
+  <script>
+    function myFunction4() {
+        var x;
+        var text = "МОЛОДЕЦ!";
+        x = document.getElementById("numb4").value;
+        if (isNaN(x) || x != 1800000) {text = "Подумай еще!";}
+        document.getElementById("demo4").innerHTML = text;
+    }
+    </script>
+ <p></p> <p></p>
+ <a href="#vverh">
+  <img align="right" src="../images/up.png" border="0" width="50" height="50"></a>
+     </div>
+     </div>
+  </div>
+</div>
+  
+  
+<SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+ 
+</body>
+</html>
