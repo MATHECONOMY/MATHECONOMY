@@ -17,7 +17,7 @@
 }
 
 .header{
-	background: linear-gradient(to bottom, #218cc1 12%, #69b5d38c 70%);
+	background: #218cc1 ;
 	height: 140px;
     display: flex;
     justify-content: center;
